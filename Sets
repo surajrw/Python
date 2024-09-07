@@ -1,0 +1,59 @@
+Sets are used to store multiple items in a single variable.
+A set is a collection which is unordered, unchangeable*, and unindexed.
+
+set1={"apple","banana","cheery"}
+print(set1)
+print(len(set1))
+set2={"apple","banana","cheery","apple"}
+print(set2)
+----------------------------------------------------------------------------------------------------------------------------------------------
+Access Items
+You cannot access items in a set by referring to an index or a key.
+But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+
+set1={"apple","banana","cheery"}
+for x in set1:
+    print(x)
+    
+print("banana" not in set1)
+print("kite" not in set1)
+----------------------------------------------------------------------------------------------------------------------------------------------
+Add Items
+By using add and update method
+
+set1={"apple","banana","cheery"}
+set1.add("kite")
+set2={"dog"}
+set1.update(set2)
+print(set1)
+----------------------------------------------------------------------------------------------------------------------------------------------
+Remove Items
+By using remove, discard, pop, clear and delete
+
+set1={"apple","banana","cheery"}
+set1.remove("cheery")
+set1.discard("apple")
+set1.pop()
+set1.clear()
+del set1
+print(set1)
+----------------------------------------------------------------------------------------------------------------------------------------------
+Join Sets
+The union() and update() methods joins all items from both sets.
+The intersection() method keeps ONLY the duplicates.
+The difference() method keeps the items from the first set that are not in the other set(s).
+The symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3=set1.union(set2)
+set4=set1.intersection(set2)
+set5=set1.difference(set2)
+set8={'1',"a"}
+set6=set1.symmetric_difference(set8)
+print(set3)
+print(set4)
+print(set5)
+print(set6)
+----------------------------------------------------------------------------------------------------------------------------------------------
+END OF FILE
