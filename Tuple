@@ -1,0 +1,45 @@
+Tuples are used to store multiple items in a single variable.
+A tuple is a collection which is ordered and unchangeable.
+Tuples are written with round brackets.
+
+tuple1=('apple',"banana","cheery")
+tuple2=("kite",)
+tuple3=("apple","banana","cheery","apple")
+
+print(tuple1)
+print(tuple2)
+print(len(tuple3))
+-------------------------------------------------------------------------------------------------------------------
+Access Tuple Items
+You can access tuple items by referring to the index number, inside square brackets.
+
+tuple1 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(tuple1[4])
+print(tuple1[3:6])
+print(tuple1[-4])
+print(tuple1[-4:-1])
+print(tuple1[1:])
+print(tuple1[:-1])
+-------------------------------------------------------------------------------------------------------------------
+Update Tuple
+Convert tuple into list , change , and convert list to tuple and if you want to remove item then do same.
+
+tuple1 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+list1=list(tuple1)
+list1[3]="kite"
+tuple1=tuple(list1)
+print(tuple1)
+
+tuple to tuple by + operator
+tuple1 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+tuple2=("kite",)
+tuple1 +=tuple2
+print(tuple1)
+-------------------------------------------------------------------------------------------------------------------
+Multiply Tuples
+
+tuple1 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+tuple1=tuple1*2
+print(tuple1)
+-------------------------------------------------------------------------------------------------------------------
+END OF FILE
