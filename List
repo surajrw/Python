@@ -1,0 +1,72 @@
+Lists are used to store multiple items in a single variable.
+Lists are created using square brackets:
+
+list1=["apple","banana","cheery"]
+list2=['1','2','3']
+list3=["apple",'2',"banana"]
+list4=["apple","banana","cheery","banana"]
+
+print(list1)
+print(list2)
+print(list3)
+print(list4)
+print(len(list1))
+----------------------------------------------------------------------------
+Access Elements 
+Indexing starts from 0 
+
+print(list1[1])
+print(list1[-1])
+print(list1[1:2])
+print(list1[1:])
+print(list1[-2:-1])
+----------------------------------------------------------------------------
+Change List Elements
+
+list1[1]="bloosom"
+list1[1:5]='1','2','3','4','5'
+list1.insert(2,"watermelon")
+----------------------------------------------------------------------------
+Add List Items
+By using append and insert and extend methods 
+
+list1.append("watermelon")
+list1.insert(1,"kite")
+list2=['1']
+list1.extend(list2)
+----------------------------------------------------------------------------
+Remove List Items
+By using remove and pop and delete and clear
+
+list1.remove("banana")
+list1.pop(2)
+del list1
+list1.clear()   # clear takes only one arguement
+----------------------------------------------------------------------------
+Sort List
+
+list1=['3','5','1','4']
+list1.sort()
+list1.reverse()
+list1.sort(key=str.lower)
+print(list1)
+----------------------------------------------------------------------------
+Copy List
+By using copy and list and slice method
+
+list1=['3','5','1','4']
+list2=list1.copy()
+list2=list(list1)
+list2=list1[:]
+print(list2)
+----------------------------------------------------------------------------
+Join List
+By extend method and by + opertor
+
+list1=['3','5','1','4']
+list2=["apple"]
+list1=list1+list2
+list1.extend(list2)
+print(list1)
+----------------------------------------------------------------------------
+END OF FILE
